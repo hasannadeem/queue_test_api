@@ -17,6 +17,7 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 # gem 'rack-cors'
 
 group :development, :test do
+  gem 'awesome_print', '~> 1.9', '>= 1.9.2'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
