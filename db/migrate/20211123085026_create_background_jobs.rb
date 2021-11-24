@@ -5,6 +5,7 @@ class CreateBackgroundJobs < ActiveRecord::Migration[6.1]
   def change
     create_table :background_jobs do |t|
       t.string :name
+      t.json :job_param
       t.datetime :starts_at
       t.datetime :expires_at
       t.integer :status, default: 0, null: false

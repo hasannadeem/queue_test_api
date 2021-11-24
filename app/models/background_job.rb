@@ -15,4 +15,6 @@ class BackgroundJob < ApplicationRecord
   }
 
   belongs_to :job_queue
+
+  default_scope { order(priority: :desc) }
 end
